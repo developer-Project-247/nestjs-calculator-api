@@ -25,8 +25,8 @@ describe('CalculatorService', () => {
   });
 
   it('rejects division by zero', () => {
-    expect(() => service.calculate('divide', 10, 0)).toThrow(
-      BadRequestException,
-    );
+    expect(() =>
+      service.calculate('divide', 10, 0),
+    ).toThrow(BadRequestException);
   });
 });
